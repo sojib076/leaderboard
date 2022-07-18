@@ -1,0 +1,136 @@
+/* TOP PLAYER  */
+
+
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+}
+.container{
+    width: 870px;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  
+}
+
+.top-title{
+    margin-top: 3px;
+    color: blue;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 50px;
+}
+.players img{
+    width: 56px;
+    height: 56px;
+  
+}
+
+.player h3{
+    color: tomato;
+    
+    margin-left: 10px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+/* TOP BLOGS */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+   
+}
+.blog{
+    display: flex;
+}
+
+.blog .thumbnail img{
+    width : 168px;
+    height: 168px;
+}
+.blog-title{
+    margin-left: 20px;
+    font-size: 20px;
+} 
+.author-info{
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgba(159, 159, 159, 1);
+}
+.blogs a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+}
+.main{
+    margin-left: 169px;
+}
+
+/* LATEST COURSE */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 30px;
+    
+
+}
+.course{
+  box-shadow:  20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.course-banner img{
+    width: 266px;
+    height: 141px;
+}
+.course-info{
+display: flex;
+ align-items: center;
+}
+.filed{
+   color: rgba(255, 192, 20, 1);
+   
+}
+.empty{
+    color: rgba(159, 159, 159, 1);
+}
+.duraiton h4{
+    margin-left: 60px;
+    border: 2px solid gray;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #fdb5a3;
+}
+
+@media screen and  (max-width: 668px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .players, .blogs, .courses{
+       
+        grid-template-columns: repeat(1, 1fr);
+      
+      
+    }
+    .player , .blog{
+      width: auto;
+        flex-direction: column;
+      
+    }
+    .blogs{
+        margin-left: 70px;
+    }
+}
+    
